@@ -60,6 +60,7 @@ function Home() {
   }
 
   // const [isCopied, setIsCopied] = useState(false);
+  const [buttonText, setButtonText] = useState('Copy');
   const handleCopyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(url);
@@ -67,6 +68,11 @@ function Home() {
       // setTimeout(() => {
       //   setIsCopied(false);
       // }, 3000);
+      setButtonText('Copied');
+
+      setTimeout(() => {
+        setButtonText('Copy');
+      }, 2500); //Make the button text normal after 2.5 seconds
     } catch (error) {
       console.error('Failed to copy to clipboard:', error);
     }
