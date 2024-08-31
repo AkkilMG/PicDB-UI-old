@@ -42,7 +42,7 @@ function Home() {
       };
 
       axios
-        .post('https://picdb-api.onrender.com/api/v1/upload', formData, config)
+        .post('https://picdb.izaries.workers.dev/upload', formData, config)
         .then((response) => {
           // console.log(response.data['success']);
           if (response.data['success'] === true) {
@@ -56,10 +56,10 @@ function Home() {
           }
         })
         .catch((error) => {
-          alert('Error uploading file:', error);
+          alert('Error uploading file:', error.message);
         });
     } catch (error) {
-      alert('Error uploading file:', error);
+      alert('Error uploading file:', error.messages);
     }
   };
 

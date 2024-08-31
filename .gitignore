@@ -1,2 +1,9 @@
 node_modules
 build
+.env
+.env.local
+
+# testing
+test
+/test
+/test/
