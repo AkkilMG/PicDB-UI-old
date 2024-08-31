@@ -7,6 +7,7 @@
 import React from 'react';
 import {Routes, Route } from 'react-router-dom';
 import { inject } from '@vercel/analytics';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import './css/style.css';
 import Home from './pages/Home';
