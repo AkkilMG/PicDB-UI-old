@@ -1,7 +1,7 @@
 {
     "name": "picdb",
-    "version": "0.1.0",
-    "description": "Interface for my new project to upload unlimited image file to Server to gain CDN.",
+    "version": "0.2.0",
+    "description": "Interface for my new project to upload unlimited image file to server to store the images.",
     "author": "Akkil M G (https://learnwithakkil.blogspot.com/)",
     "private": false,
     "dependencies": {
