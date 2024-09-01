@@ -40,7 +40,7 @@ function Header() {
                     
                     {/* Nav Menu */}
                     <nav className={`px-3 md:flex flex-wrap items-center justify-center text-base  ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-                        <div className={`py-4 p-3 md:flex md:flex-row ${isMenuOpen ? 'mt-3 rounded absolute top-full right-4 w-full/2 bg-gray-600 bg-opacity-90 md:static md:bg-transparent' : ''}`}>
+                        <div className={`py-4 p-3 md:flex md:flex-row ${isMenuOpen ? 'mt-3 rounded absolute top-full right-4 w-full/2 bg-gray-600 bg-opacity-90 md:static md:bg-transparent' : 'px-3'}`}>
                             <a href="/" className="block px-4 py-2 text-gray-100 hover:text-orange-600 md:inline-block md:mr-6">Home</a>
                             <a href="/report" className="block px-4 py-2 text-gray-100 hover:text-orange-600 md:inline-block md:mr-6">Report</a>
                             <a href="/contact" className="block px-4 py-2 text-gray-100 hover:text-orange-600 md:inline-block md:mr-6">Contact</a>
