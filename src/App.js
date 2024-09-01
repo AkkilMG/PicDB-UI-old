@@ -24,7 +24,7 @@ function App() {
   
   inject();
   return (
-    <div className="flex flex-col w-full min-h-screen bg-fixed bg-no-repeat bg-cover backdrop-blur-sm" id="journal-scroll" style={{backgroundImage: `url(${require("./asset/home.jpg")})`}}>
+    <div className="flex flex-col w-full min-h-screen bg-fixed bg-no-repeat bg-cover backdrop-blur-sm" id="journal-scroll" style={{backgroundImage: `url("/assets/home.jpg")`}}>
       <SpeedInsights/>
       {/* <Analytics /> */}
       <Header />

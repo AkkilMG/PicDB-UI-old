@@ -4,7 +4,6 @@
  * @license: GNU General Public License v3.0
  **/
 
-import Upload from '../asset/upload.png';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -177,7 +176,7 @@ function Home() {
             <img src="assets/corner.svg" style={{right: "34px", bottom: "34px", position: "absolute", transform: "rotate(180deg)"}} alt="corner" />
             
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-white text-bold text-3xl">Drop image anywhere</span>
+              <span className="text-white font-bold text-3xl">Drop image anywhere</span>
             </div>
           </div>
         </div>
@@ -283,14 +282,14 @@ function Home() {
                                 <div className="flex flex-auto">
                                   <img
                                     className="object-center h-36"
-                                    src={Upload}
+                                    src="/assets/upload.svg"
                                     alt="upload"
                                   />
                                 </div>
                                 <p className="text-center text-gray-200 pointer-none p-2">
                                   <span className="text-sm">Drag and drop</span>{' '}
                                   images here <br /> or{' '}
-                                  <span className="text-blue-600">
+                                  <span className="font-bold text-orange-600">
                                     Click to upload
                                   </span>{' '}
                                   from your computer
