@@ -116,7 +116,7 @@ function Home() {
       };
 
       axios
-        .post('https://picdb.izaries.workers.dev/upload', formData, config)
+        .post('https://picdb.avianintek.workers.dev/upload', formData, config)
         .then((response) => {
           // console.log(response.data['success']);
           if (response.data['success'] === true) {
